@@ -73,18 +73,18 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-4 sm:py-8 px-3 sm:px-4 md:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <header className="mb-8 text-center">
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <div className="p-3 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 shadow-lg shadow-indigo-500/50">
-              <ListTodo className="w-8 h-8 text-white" strokeWidth={2.5} />
+        <header className="mb-6 sm:mb-8 text-center">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2">
+            <div className="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 shadow-lg shadow-indigo-500/50">
+              <ListTodo className="w-6 h-6 sm:w-8 sm:h-8 text-white" strokeWidth={2.5} />
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
               Tasks
             </h1>
           </div>
-          <p className="text-slate-400 text-sm sm:text-base">
+          <p className="text-slate-400 text-xs sm:text-sm md:text-base">
             Organize your life, one task at a time
           </p>
         </header>
@@ -119,8 +119,9 @@ function App() {
           )}
         </main>
 
-        <footer className="mt-12 text-center text-slate-500 text-sm">
-          <p>Click a task to edit • Press Enter to save • Escape to cancel</p>
+        <footer className="mt-8 sm:mt-12 text-center text-slate-500 text-xs sm:text-sm px-2">
+          <p className="hidden sm:block">Click a task to edit • Press Enter to save • Escape to cancel</p>
+          <p className="sm:hidden">Tap to edit • Enter to save • Esc to cancel</p>
         </footer>
       </div>
     </div>

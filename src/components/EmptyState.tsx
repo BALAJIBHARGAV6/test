@@ -27,14 +27,14 @@ export default function EmptyState({ filter }: EmptyStateProps) {
   const { icon: Icon, title, description } = messages[filter];
 
   return (
-    <div className="glass-container p-12 text-center">
-      <div className="flex justify-center mb-4">
+    <div className="glass-container p-8 sm:p-12 text-center">
+      <div className="flex justify-center mb-3 sm:mb-4">
         <div className="float-animation">
-          <Icon className="w-16 h-16 text-indigo-400" strokeWidth={1.5} />
+          <Icon className="w-12 h-12 sm:w-16 sm:h-16 text-indigo-400" strokeWidth={1.5} />
         </div>
       </div>
-      <h3 className="text-xl font-semibold text-slate-200 mb-2">{title}</h3>
-      <p className="text-slate-400">{description}</p>
+      <h3 className="text-lg sm:text-xl font-semibold text-slate-200 mb-1.5 sm:mb-2">{title}</h3>
+      <p className="text-sm sm:text-base text-slate-400">{description}</p>
     </div>
   );
 }

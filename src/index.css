@@ -216,11 +216,37 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
   .glass-container {
-    border-radius: 0;
-    min-height: 100vh;
-    border-left: none;
-    border-right: none;
+    border-radius: 12px;
+  }
+
+  .task-item {
+    margin-bottom: 12px;
+  }
+
+  .btn-primary {
+    padding: 12px 16px;
+  }
+
+  .filter-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+  .filter-btn span:not(.ml-1) {
+    display: none;
+  }
+
+  .filter-btn {
+    padding: 12px;
   }
 }
 
